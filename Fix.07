@@ -1,0 +1,35 @@
+/*Fa ̧ca um programa em C que gere um vetor com 3 n ́umeros inteiros pseudoaleat ́orios no intervalo
+[0, 19] e apresente a sua m ́edia aritm ́etica e geom ́etrica.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <math.h>
+
+#define TAM 3
+
+
+int main (){
+
+    int vet[TAM];
+    int aleatorio;
+
+    srand(time(NULL));
+
+    for (int i = 0; i < TAM; i++){
+
+         aleatorio = rand() % 20;
+
+        printf("vet[%d] = %d \n", i, aleatorio);
+    }
+
+    float mediaA, mediaG;
+    mediaA = float ((vet[0] + vet[1] + vet[2])/2);
+    mediaG = float (vet[0]*vet[1]*vet[2]);
+    med
+
+
+
+
+    return 0;
+}
